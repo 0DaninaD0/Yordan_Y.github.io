@@ -1,14 +1,14 @@
 /* GLOBAL RESET & TYPOGRAPHY */
 * {
-    box-sizing: border-box; /* Ensures padding and border are included in width[cite: 7] */
+    box-sizing: border-box; /* Ensures padding and border are included in width */
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif; /* Fallback fonts[cite: 7] */
+    font-family: Arial, sans-serif; /* Fallback fonts */
     background-color: #f4f4f9;
-    color: #333333; /* Hex color codes[cite: 2] */
+    color: #333333; /* Hex color codes */
     line-height: 1.6;
 }
 
@@ -27,10 +27,10 @@ header {
 /* FLEXBOX NAVBAR[cite: 3] */
 nav ul {
     display: flex;
-    flex-direction: column; /* Stacked links on mobile[cite: 3] */
+    flex-direction: column; /* Stacked links on mobile */
     align-items: center;
     gap: 15px;
-    list-style: none; /* Removes bullet points[cite: 2] */
+    list-style: none; /* Removes bullet points */
     background-color: #34495e;
     padding: 15px;
 }
@@ -43,7 +43,7 @@ nav a:link, nav a:visited {
 
 nav a:hover {
     color: #1abc9c;
-    text-decoration: underline; /* Styling link states[cite: 2] */
+    text-decoration: underline; /* Styling link states */
 }
 
 /* RESPONSIVE IMAGES */
@@ -54,18 +54,18 @@ img {
     border-radius: 8px;
 }
 
-/* CSS GRID FOR CV AND PORTFOLIO[cite: 8] */
+/* CSS GRID FOR CV AND PORTFOLIO */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr; /* 1 column on mobile[cite: 8] */
-    gap: 20px; /* Space between grid items[cite: 8] */
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap: 20px; /* Space between grid items */
     padding: 20px;
 }
 
 .card {
     background-color: #ffffff;
     padding: 20px;
-    border: 1px solid #dddddd; /* Solid border[cite: 2] */
+    border: 1px solid #dddddd; /* Solid border */
     border-radius: 8px;
 }
 
@@ -76,20 +76,20 @@ footer {
     margin-top: 20px;
 }
 
-/* BREAKPOINT 1: TABLET (768px)[cite: 8] */
+/* BREAKPOINT 1: TABLET (768px) */
 @media screen and (min-width: 768px) {
     nav ul {
-        flex-direction: row; /* Horizontal navbar on tablet[cite: 3] */
+        flex-direction: row; /* Horizontal navbar on tablet */
         justify-content: center;
         gap: 40px;
     }
 
     .grid-container {
-        grid-template-columns: 1fr 1fr; /* 2 columns for CV and Portfolio[cite: 8] */
+        grid-template-columns: 1fr 1fr; /* 2 columns for CV and Portfolio */
     }
 }
 
-/* BREAKPOINT 2: DESKTOP (1024px)[cite: 8] */
+/* BREAKPOINT 2: DESKTOP (1024px) */
 @media screen and (min-width: 1024px) {
     main {
         max-width: 1000px;
@@ -97,6 +97,6 @@ footer {
     }
 
     .portfolio-grid {
-        grid-template-columns: 1fr 1fr 1fr; /* 3 columns for Portfolio on large screens[cite: 8] */
+        grid-template-columns: 1fr 1fr 1fr; /* 3 columns for Portfolio on large screens */
     }
 }
